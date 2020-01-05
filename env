@@ -1,0 +1,16 @@
+# Data directory for download
+DATA_DIR=
+
+# Directory to store applications configurations
+CONFIG_DIR=
+
+# VPN credentials for transmission
+VPN_PROVIDER=
+VPN_USERNAME=
+VPN_PASSWORD=
+
+# Pihole admin password
+PI_PASSWORD=
+
+# Local network
+LOCAL_NETWORK=
