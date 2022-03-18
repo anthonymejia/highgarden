@@ -49,6 +49,8 @@ services:
     container_name: plex
     restart: always
     environment:
+      VERSION: docker
+      PLEX_CLAIM: ${PLEX_CLAIM}
       PUID: 1000
       PGID: 1000
       TZ: 'America/New_York'
@@ -136,10 +138,11 @@ services:
       TRANSMISSION_RATIO_LIMIT_ENABLED: "true"
       TRANSMISSION_IDLE_SEEDING_LIMIT: 5
       TRANSMISSION_IDLE_SEEDING_LIMIT_ENABLED: "true"
+      TRANSMISSION_UTP_ENABLED: "false"
       OPENVPN_PROVIDER: ${VPN_PROVIDER}
       OPENVPN_USERNAME: ${VPN_USERNAME}
       OPENVPN_PASSWORD: ${VPN_PASSWORD}
-      OPENVPN_OPTS: "--inactive 3600 --ping 10 --ping-exit 60"
+      OPENVPN_CONFIG: ${VPN_CONFIG}
       LOCAL_NETWORK: ${LOCAL_NETWORK}
       TRANSMISSION_WEB_UI: "combustion"
       VIRTUAL_HOST: 'transmission.nuc.lan'

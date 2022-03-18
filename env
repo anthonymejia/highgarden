@@ -8,9 +8,13 @@ CONFIG_DIR=
 VPN_PROVIDER=
 VPN_USERNAME=
 VPN_PASSWORD=
+VPN_CONFIG=
 
 # Pihole admin password
 PI_PASSWORD=
 
 # Local network
 LOCAL_NETWORK=
+
+# Plex
+PLEX_CLAIM=
